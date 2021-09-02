@@ -1,0 +1,8 @@
+/* Checking CSS Connection */
+:root {
+  --body-bgcolor: "black";
+}
+
+body {
+  background-color: var(--body-bgcolor);
+}
