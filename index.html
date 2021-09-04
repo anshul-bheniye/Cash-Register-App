@@ -5,10 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Manager</title>
+    <script src="https://kit.fontawesome.com/25c119fea3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="container">
+    <h3>Cash Manager</h3>
     
+    <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+    
+    <label for="bill-amount">Bill Amount</label>
+    <input type="number" name="amount" id="bill-amount" value="">
+
+    <button type="submit" class="next-button">Next</button> 
+    
+    <div class="unhide-div" hidden>
+        <label for="cash-given">Cash Given</label>
+        <input type="number" name="given" id="cash-given" value="">
+    
+        <button type="submit" class="check-button">Check</button>
+    </div>   
+        <p class="error-message"></p>
+        
+     
+        <table>
+            <caption>Return Change</caption>
+            <tr>
+                <th>No. of Notes</th>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+            </tr>
+    
+            <tr>
+                <th>Notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>50</td>
+                <td>20</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+      <footer class="footer">
+        <hr>
+        <p class="copyright">© | 2021 | Anshul Bheniye</p>
+        <ul class="list">
+          <li>
+            <a class="links" href="https://github.com/anshul-bheniye/" target="_blank">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a class="links" href="https://twitter.com/anshul_bheniye" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="links" href="https://www.instagram.com/anshul_sensei" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
+
