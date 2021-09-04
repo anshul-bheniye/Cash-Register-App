@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oxygen:wght@700&display=swap");
+
+:root {
+  --body-bgcolor: #1f2937;
+  --bg-color: #e5e7eb;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  background-color: var(--body-bgcolor);
+}
+
+.container {
+  background-color: var(--bg-color);
+  border: 1px dashed;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+h3,
+caption,
+.error-message {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+}
+
+/* input */
+input,
+button {
+  border-radius: 12px;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* table */
+table {
+  border: 2px solid;
+  margin: auto;
+  width: 400px;
+}
+th,
+td {
+  border: 0.5px solid;
+}
+
+/* footer */
+.copyright {
+  letter-spacing: 5px;
+}
+hr {
+  margin-top: 30px;
+}
+.links {
+  font-size: 1.5rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
