@@ -8,7 +8,7 @@ let noOfNotes = document.getElementsByClassName('no-of-notes');
 const currentNotes = [2000, 500, 100, 50, 20, 10, 5, 1];
 
 // Unhide the input field
-nextButton.addEventListener('click', function(){
+nextButton.addEventListener('click', () => {
   let unhide = document.querySelector('.unhide-div');
   if (unhide.style.display === 'none' && billAmount.value > 0) {
     unhide.style.display = 'block';
@@ -18,7 +18,7 @@ nextButton.addEventListener('click', function(){
 });
 
 // event listenr on check button
-checkButton.addEventListener("click", function validateBillAndCashAmount() {
+var validateBillAndCashAmount = () => {
   hideMessage();
   if (billAmount.value > 0) {
 
@@ -33,18 +33,18 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
 } else {
   showMessage("Invalid Bill Amount");
 }
-});
-
-function hideMessage() {
-  errorMessage.style.display = "none";
 }
 
-function showMessage(msg) {
+checkButton.addEventListener("click", validateBillAndCashAmount);
+
+var hideMessage = () => errorMessage.style.display = "none";
+
+var showMessage = (msg) => {
   errorMessage.style.display = "block";
   errorMessage.innerText = msg;
 }
 
-function calculateChange(amountToBeReturned) {
+var calculateChange = (amountToBeReturned)  => {
   
   for (let i = 0; i < currentNotes.length; i++) {
     
@@ -55,5 +55,3 @@ function calculateChange(amountToBeReturned) {
     noOfNotes[i].innerText = numberOfNotes;
   }
 }
-
-
